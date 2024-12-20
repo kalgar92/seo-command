@@ -1,0 +1,25 @@
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Command bar animations */
+#command-bar-root {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.command-bar-container {
+  animation: slideDown 0.2s ease-out;
+}
